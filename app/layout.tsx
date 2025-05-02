@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
+import "easymde/dist/easymde.min.css";
 
 const workSans = localFont({
   src: [
@@ -65,9 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${workSans.variable} ${workSans.variable} antialiased`}
-      >
+      <body className={`${workSans.variable} ${workSans.variable} antialiased`}>
         {children}
       </body>
     </html>
